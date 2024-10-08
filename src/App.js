@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import TesteFuncao from './TesteFuncao';
 import TesteClasse from './TesteClasse';
 import Saudacao from './Saudacao';
+import Soma from './Soma';
 
 
 // function App() {
@@ -27,11 +28,15 @@ import Saudacao from './Saudacao';
 // }
 
 const App = () => {
+  const n1 = 2;
+  const n2 = 5;
+  const soma = n1 + n2;
   return(
     <div>
       <TesteFuncao></TesteFuncao>
       <TesteClasse></TesteClasse>
       <Saudacao name="ana clara" sobrenome="castro"/>
+      <Soma n1={n1} n2={n2} soma={soma}/>
     </div>
   );
 };
