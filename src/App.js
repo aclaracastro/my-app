@@ -6,6 +6,8 @@ import Saudacao from './Saudacao';
 import Soma from './Soma';
 import ContadorFuncao from './componentes/ContadorFuncao';
 import ContadorClasse from './componentes/ContadorClasse';
+import ExibirNomeFuncao from './componentes/ExibirNomeFuncao';
+import ExibirNomeClasse from './componentes/ExibirNomeClasse';
 
 
 // function App() {
@@ -41,6 +43,8 @@ const App = () => {
       <Soma n1={n1} n2={n2} soma={soma}/>
       <ContadorFuncao></ContadorFuncao>
       <ContadorClasse></ContadorClasse>
+      <ExibirNomeFuncao></ExibirNomeFuncao>
+      <ExibirNomeClasse></ExibirNomeClasse>
     </div>
   );
 };
