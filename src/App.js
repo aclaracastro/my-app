@@ -4,6 +4,8 @@ import TesteFuncao from './TesteFuncao';
 import TesteClasse from './TesteClasse';
 import Saudacao from './Saudacao';
 import Soma from './Soma';
+import ContadorFuncao from './componentes/ContadorFuncao';
+import ContadorClasse from './componentes/ContadorClasse';
 
 
 // function App() {
@@ -37,6 +39,8 @@ const App = () => {
       <TesteClasse></TesteClasse>
       <Saudacao name="ana clara" sobrenome="castro"/>
       <Soma n1={n1} n2={n2} soma={soma}/>
+      <ContadorFuncao></ContadorFuncao>
+      <ContadorClasse></ContadorClasse>
     </div>
   );
 };
