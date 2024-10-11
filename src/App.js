@@ -1,14 +1,7 @@
 // import logo from './logo.svg';
 import React, { Component } from 'react';
-import TesteFuncao from './TesteFuncao';
-import TesteClasse from './TesteClasse';
-import Saudacao from './Saudacao';
-import Soma from './Soma';
-import ContadorFuncao from './componentes/aula 3/ContadorFuncao';
-import ContadorClasse from './componentes/aula 3/ContadorClasse';
-import ExibirNomeFuncao from './componentes/aula 3/ExibirNomeFuncao';
-import ExibirNomeClasse from './componentes/aula 3/ExibirNomeClasse';
-import MudancaCor from './componentes/aula 3/hw/MudancaCor';
+import Greeting from './componentes/aula 4/Greeting';
+import Parent from './componentes/aula 4/Parent';
 
 
 // function App() {
@@ -33,20 +26,10 @@ import MudancaCor from './componentes/aula 3/hw/MudancaCor';
 // }
 
 const App = () => {
-  const n1 = 2;
-  const n2 = 5;
-  const soma = n1 + n2;
   return(
     <div>
-      <TesteFuncao></TesteFuncao>
-      <TesteClasse></TesteClasse>
-      <Saudacao name="ana clara" sobrenome="castro"/>
-      <Soma n1={n1} n2={n2} soma={soma}/>
-      <ContadorFuncao></ContadorFuncao>
-      <ContadorClasse></ContadorClasse>
-      <ExibirNomeFuncao></ExibirNomeFuncao>
-      <ExibirNomeClasse></ExibirNomeClasse>
-      <MudancaCor/>
+      <Greeting name='ana' age={20} telefone={21090} endereco='av fulano'/>
+      <Parent/>
     </div>
   );
 };
