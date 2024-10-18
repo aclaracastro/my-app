@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import React, { Component } from 'react';
-import Greeting from './componentes/aula 4/Greeting';
-import Parent from './componentes/aula 4/Parent';
+import Dogs from './componentes/aula 5/Dogs';
 
 
 // function App() {
@@ -28,8 +27,7 @@ import Parent from './componentes/aula 4/Parent';
 const App = () => {
   return(
     <div>
-      <Greeting name='ana' age={20} telefone={21090} endereco='av fulano'/>
-      <Parent/>
+      <Dogs></Dogs>
     </div>
   );
 };
