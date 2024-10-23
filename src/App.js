@@ -1,33 +1,19 @@
 // import logo from './logo.svg';
 import React, { Component } from 'react';
-import Dogs from './componentes/aula 5/Dogs';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+import InputComponente from './componentes/aula 6/InputComponente';
+import FormularioPai from './componentes/aula 6/FormularioPai';
+import Formulario from './componentes/aula 6/Formulario';
+import FormularioComValidacao from './componentes/aula 6/FormularioComValidacao';
+import ListaNomes from './componentes/aula 6/ListaNomes';
+import BiDirecional from './componentes/aula 6/BiDirecional';
 
 const App = () => {
   return(
     <div>
-      <Dogs></Dogs>
+      {/* <Formulario></Formulario> */}
+      <FormularioComValidacao></FormularioComValidacao>
+      <ListaNomes/>
+      <BiDirecional></BiDirecional>
     </div>
   );
 };
