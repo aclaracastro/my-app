@@ -1,19 +1,21 @@
 // import logo from './logo.svg';
 import React, { Component } from 'react';
-import InputComponente from './componentes/aula 6/InputComponente';
-import FormularioPai from './componentes/aula 6/FormularioPai';
-import Formulario from './componentes/aula 6/Formulario';
-import FormularioComValidacao from './componentes/aula 6/FormularioComValidacao';
-import ListaNomes from './componentes/aula 6/ListaNomes';
-import BiDirecional from './componentes/aula 6/BiDirecional';
+import {Provider} from "react-redux";
+import store from './componentes/aula 7 pt 1/store';
+import Counter from './componentes/aula 7 pt 1/Counter';
+import StyledButton from './componentes/aula 7 pt 2/StyledButton'
+import ProgressCircle from './componentes/aula 7 pt 2/ProgressCircle';
 
 const App = () => {
   return(
+    //provider e counter-> para parte 1 da aula 7 (redux)
+    // <Provider store={store}>
+    //   <Counter/>
+    // </Provider>
+
     <div>
-      {/* <Formulario></Formulario> */}
-      <FormularioComValidacao></FormularioComValidacao>
-      <ListaNomes/>
-      <BiDirecional></BiDirecional>
+      <StyledButton/>
+      <ProgressCircle />
     </div>
   );
 };
