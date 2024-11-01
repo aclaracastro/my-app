@@ -1,27 +1,30 @@
 // import logo from './logo.svg';
-import React, { Component } from 'react';
-import {Provider} from "react-redux";
-import store from './componentes/aula 7 pt 1/store';
-import Counter from './componentes/aula 7 pt 1/Counter';
-import StyledButton from './componentes/aula 7 pt 2/StyledButton'
-import ProgressCircle from './componentes/aula 7 pt 2/ProgressCircle';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
+import Home from './componentes/aula 8/Home';
+import Users from './componentes/aula 8/Users';
+import UserDetail from './componentes/aula 8/UserDatail';
 
 const App = () => {
   return(
-    //provider e counter-> para parte 1 da aula 7 (redux)
-    // <Provider store={store}>
-    //   <Counter/>
-    // </Provider>
-
-    <div>
-      <StyledButton/>
-      <ProgressCircle />
-    </div>
+   
+      <Router>
+        <div>
+        <nav>
+          <Link to="/"> Home </Link> |  <Link to="/users"> Users </Link> 
+        </nav>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/users' element={<Users/>} >
+            <Route path=':userId' element={<UserDetail/>} /> {/*rota aninhada*/}
+          </Route>
+          <Route path='*' element={<Navigate to='/'/>} /> {/*redirecionamento*/}
+        </Routes>
+        </div>
+      </Router>
+    
   );
-};
-
-
-
+}
 
 
 export default App;
