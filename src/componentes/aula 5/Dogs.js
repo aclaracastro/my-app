@@ -11,7 +11,7 @@ function Dogs(){
         .then(response => response.json())
         .then(data => {
             setDogImage(data.message);
-            setLoading(false)
+            setLoading(false    )
             setVisible(false)
         })
         .catch(error => setVisible(true));
