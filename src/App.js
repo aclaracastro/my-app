@@ -6,6 +6,7 @@ import StdButton from './componentes/aula 9/StdButton';
 import CardTeste from './componentes/aula 9/CardTeste';
 import ContagemPai from './componentes/aula 4/hw/ContagemPai';
 import Personagem from './componentes/aula 5/hw/Personagem';
+import ListaDeNomes from './componentes/aula 6/hw/ListaDeNomes';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       {/* <CardTeste/> */}
       <ContagemPai/>
       <Personagem/>
+      <ListaDeNomes/>
     </>
   );
 }

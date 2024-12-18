@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
 import './Grid.css';
-import Divider from '@mui/material/Divider';
 
 const Personagem = () => {
   const [produto, setProduto] = useState([]);
 
   useEffect(() => {
-    fetch('https://swapi.dev/api/people')
+    fetch('https://swapi.py4e.com/api/people')
       .then(response => response.json())
       .then(data => {
-        setProduto(data.results); // sem o .data porque a API retorna diretamente os produtos
+        setProduto(data.results); 
       })
       .catch(error => console.log('Erro ao buscar produtos', error));
   }, []);
